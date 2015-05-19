@@ -19,7 +19,7 @@ var uniqueRandomArray = require('unique-random-array');
 var rand = uniqueRandomArray([1, 2, 3, 4]);
 
 console.log(rand(), rand(), rand(), rand());
-//=> 4 2 1 4
+//=> 4 2 1 3
 ```
 
 
