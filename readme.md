@@ -37,7 +37,12 @@ Type: `array`
 
 ## Related
 
-- [`unique-random`](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
+- [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
+- [random-int](https://github.com/sindresorhus/random-int) - Generate a random integer
+- [random-float](https://github.com/sindresorhus/random-float) - Generate a random float
+- [random-item](https://github.com/sindresorhus/random-item) - Get a random item from an array
+- [random-obj-key](https://github.com/sindresorhus/random-obj-key) - Get a random key from an object
+- [random-obj-prop](https://github.com/sindresorhus/random-obj-prop) - Get a random property from an object
 
 
 ## License
