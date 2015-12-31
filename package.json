@@ -27,13 +27,13 @@
   ],
   "repository": "sindresorhus/unique-random-array",
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "dependencies": {
     "unique-random": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "*"
   },
   "engines": {
     "node": ">=0.10.0"

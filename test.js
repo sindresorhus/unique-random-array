@@ -1,18 +1,15 @@
-'use strict';
-var test = require('ava');
-var uniqueRandomArray = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	var curr;
-	var prev;
-	var rand = uniqueRandomArray([1, 2, 3, 4]);
-	var i = 100;
+test(t => {
+	const rand = fn([1, 2, 3, 4]);
+	let curr;
+	let prev;
+	let i = 100;
 
 	while (i--) {
 		curr = rand();
-		t.assert(curr !== prev);
+		t.not(curr, prev);
 		prev = curr;
 	}
-
-	t.end();
 });
