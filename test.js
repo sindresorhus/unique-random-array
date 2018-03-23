@@ -1,15 +1,15 @@
 import test from 'ava';
-import fn from './';
+import m from '.';
 
-test(t => {
-	const rand = fn([1, 2, 3, 4]);
-	let curr;
-	let prev;
+test('main', t => {
+	const random = m([1, 2, 3, 4]);
+
+	let current;
+	let previous;
 	let i = 100;
-
 	while (i--) {
-		curr = rand();
-		t.not(curr, prev);
-		prev = curr;
+		current = random();
+		t.not(current, previous);
+		previous = current;
 	}
 });

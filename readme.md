@@ -7,18 +7,18 @@ Useful for things like slideshows where you don't want to have the same slide tw
 
 ## Install
 
-```sh
-$ npm install --save unique-random-array
+```
+$ npm install unique-random-array
 ```
 
 
 ## Usage
 
 ```js
-var uniqueRandomArray = require('unique-random-array');
-var rand = uniqueRandomArray([1, 2, 3, 4]);
+const uniqueRandomArray = require('unique-random-array');
+const random = uniqueRandomArray([1, 2, 3, 4]);
 
-console.log(rand(), rand(), rand(), rand());
+console.log(random(), random(), random(), random());
 //=> 4 2 1 4
 ```
 
@@ -31,8 +31,7 @@ Returns a function that when called will return a random element that's never th
 
 #### input
 
-*Required*  
-Type: `array`
+Type: `Array`
 
 
 ## Related
@@ -48,4 +47,4 @@ Type: `array`
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
