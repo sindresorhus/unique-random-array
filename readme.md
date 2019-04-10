@@ -1,6 +1,6 @@
 # unique-random-array [![Build Status](https://travis-ci.org/sindresorhus/unique-random-array.svg?branch=master)](https://travis-ci.org/sindresorhus/unique-random-array)
 
-> Get consecutively unique elements from an array
+> Get consecutively unique elements from an array or an iterable
 
 Useful for things like slideshows where you don't want to have the same slide twice in a row.
 
@@ -20,6 +20,11 @@ const random = uniqueRandomArray([1, 2, 3, 4]);
 
 console.log(random(), random(), random(), random());
 //=> 4 2 1 4
+
+const randomIterable = uniqueRandomArray(new Set([1, 2, 3, 4]);
+
+console.log(randomIterable(), randomIterable(), randomIterable(), randomIterable());
+//=> 4 2 1 4
 ```
 
 
@@ -31,7 +36,7 @@ Returns a function that when called will return a random element that's never th
 
 #### input
 
-Type: `Array`
+Type: `Array | Iterable`
 
 
 ## Related

@@ -1,9 +1,10 @@
 import test from 'ava';
-import m from '.';
+import uniqueRandomArray from '.';
 
-test('main', t => {
-	const random = m([1, 2, 3, 4]);
+const fixture = [1, 2, 3, 4];
+const iterableFixture = new Set([1, 2, 3, 4]);
 
+function testRandom(t, random) {
 	let current;
 	let previous;
 	let i = 100;
@@ -12,4 +13,12 @@ test('main', t => {
 		t.not(current, previous);
 		previous = current;
 	}
+}
+
+test('plain array', t => {
+	testRandom(t, uniqueRandomArray(fixture));
+});
+
+test('iterable', t => {
+	testRandom(t, uniqueRandomArray(iterableFixture));
 });
