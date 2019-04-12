@@ -1,6 +1,6 @@
 {
 	"name": "unique-random-array",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"description": "Get consecutively unique elements from an array",
 	"license": "MIT",
 	"repository": "sindresorhus/unique-random-array",
