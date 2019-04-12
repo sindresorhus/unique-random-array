@@ -21,20 +21,17 @@
 	],
 	"keywords": [
 		"unique",
-		"uniq",
 		"random",
-		"rand",
 		"number",
 		"single",
 		"generate",
 		"non-repeating",
 		"array",
-		"arr",
 		"item",
 		"element"
 	],
 	"dependencies": {
-		"unique-random": "^2.0.0"
+		"unique-random": "^2.1.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",

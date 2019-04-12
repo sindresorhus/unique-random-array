@@ -16,6 +16,7 @@ $ npm install unique-random-array
 
 ```js
 const uniqueRandomArray = require('unique-random-array');
+
 const random = uniqueRandomArray([1, 2, 3, 4]);
 
 console.log(random(), random(), random(), random());
@@ -27,11 +28,11 @@ console.log(random(), random(), random(), random());
 
 ### uniqueRandomArray(array)
 
-Returns a function that when called will return a random element that's never the same as the previous.
+Returns a function, that when called, will return a random element that's never the same as the previous.
 
 #### array
 
-Type: `Array<unknown>`
+Type: `unknown[]`
 
 
 ## Related
