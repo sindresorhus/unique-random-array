@@ -25,13 +25,13 @@ console.log(random(), random(), random(), random());
 
 ## API
 
-### uniqueRandomArray(input)
+### uniqueRandomArray(array)
 
 Returns a function that when called will return a random element that's never the same as the previous.
 
-#### input
+#### array
 
-Type: `Array`
+Type: `Array<unknown>`
 
 
 ## Related

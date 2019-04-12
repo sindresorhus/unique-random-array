@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from '.';
+import uniqueRandomArray from '.';
 
 test('main', t => {
-	const random = m([1, 2, 3, 4]);
+	const random = uniqueRandomArray([1, 2, 3, 4]);
 
 	let current;
 	let previous;
