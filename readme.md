@@ -1,4 +1,4 @@
-# unique-random-array [![Build Status](https://travis-ci.org/sindresorhus/unique-random-array.svg?branch=master)](https://travis-ci.org/sindresorhus/unique-random-array)
+# unique-random-array
 
 > Get consecutively unique elements from an array
 
