@@ -1,13 +1,13 @@
 import test from 'ava';
-import uniqueRandomArray from '.';
+import uniqueRandomArray from './index.js';
 
 test('main', t => {
 	const random = uniqueRandomArray([1, 2, 3, 4]);
 
 	let current;
 	let previous;
-	let i = 100;
-	while (i--) {
+	let index = 100;
+	while (index--) {
 		current = random();
 		t.not(current, previous);
 		previous = current;
