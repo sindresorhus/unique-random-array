@@ -1,6 +1,6 @@
-import uniqueRandom from 'unique-random';
+import {consecutiveUniqueRandom} from 'unique-random';
 
 export default function uniqueRandomArray(array) {
-	const random = uniqueRandom(0, array.length - 1);
+	const random = consecutiveUniqueRandom(0, array.length - 1);
 	return () => array[random()];
 }

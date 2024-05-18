@@ -6,8 +6,8 @@ Useful for things like slideshows where you don't want to have the same slide tw
 
 ## Install
 
-```
-$ npm install unique-random-array
+```sh
+npm install unique-random-array
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ console.log(random(), random(), random(), random());
 
 ### uniqueRandomArray(array)
 
-Returns a function, that when called, will return a random element that's never the same as the previous.
+Returns a function, that when called, will return a random element that's never the same as the previous, or `undefined` if the array is empty.
 
 #### array
 

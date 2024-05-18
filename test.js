@@ -13,3 +13,7 @@ test('main', t => {
 		previous = current;
 	}
 });
+
+test('empty array', t => {
+	t.is(uniqueRandomArray([])(), undefined);
+});

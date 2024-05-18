@@ -1,3 +1,6 @@
+type EmptyArray = readonly never[] & {length: 0};
+type NonEmptyArray<T> = readonly [T, ...T[]] | readonly [...T[], T] | readonly [T, ...T[], T];
+
 /**
 Get consecutively unique elements from an array.
 
@@ -13,4 +16,6 @@ console.log(random(), random(), random(), random());
 //=> 4 2 1 4
 ```
 */
-export default function uniqueRandomArray<T>(array: readonly T[]): () => T;
+export default function uniqueRandomArray<T>(array: EmptyArray): () => undefined;
+export default function uniqueRandomArray<T>(array: NonEmptyArray<T>): () => T;
+export default function uniqueRandomArray<T>(array: readonly T[]): () => T | undefined;
