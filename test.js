@@ -15,5 +15,8 @@ test('main', t => {
 });
 
 test('empty array', t => {
-	t.is(uniqueRandomArray([])(), undefined);
+	const random = uniqueRandomArray([]);
+	t.is(random(), undefined);
+	t.is(random(), undefined);
+	t.is(random(), undefined);
 });
